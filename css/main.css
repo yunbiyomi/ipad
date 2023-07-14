@@ -1,3 +1,4 @@
+/* Common */
 body {
   font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 16px;
@@ -5,4 +6,131 @@ body {
   word-break: keep-all;
 }
 
+a {
+  text-decoration: none;  
+}
 
+
+/* Header */
+header {
+  background-color: #3a3a3a;
+}
+
+header .inner {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+header ul.menu {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul.menu > li {
+  display: flex;
+  position: relative;
+}
+
+header ul.menu > li > a {
+  padding: 0 10px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  color: #f5f5f5;
+  opacity: .8;
+  text-decoration: none;
+}
+
+header ul.menu > li.apple-logo > a,
+header ul.menu > li.search-starter > a,
+header ul.menu > li.basket-starter > a {
+  width: 14px;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center 13px;
+}
+
+header ul.menu > li.apple-logo > a {
+  background-image: url("../images/header_apple.svg");
+}
+
+header ul.menu > li.search-starter > a {
+  background-image: url("../images/header_search.svg");
+}
+
+header ul.menu > li.basket-starter > a {
+  background-image: url("../images/header_bag.svg");
+}
+
+header ul.menu > li > a:hover {
+  opacity: 1;
+}
+
+/* Header / Menu / Basket */
+header .basket {
+  width: 290px;
+  padding: 10px 20px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  top: calc(100% + 4px);
+  right: -6px;
+  visibility: hidden;
+  transition: .4s;
+  opacity: 0;
+}
+
+header .basket.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+header .basket .arrow {
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+  right: 12px;
+}
+
+header .basket .arrow::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+header .basket .message {
+  padding: 30px 0;
+  font-size: 13px;
+  color: #6e6e6e;
+  text-align: center;
+}
+
+header .basket ul {
+  margin-top: 10px;
+}
+
+header .basket ul li {
+  border-top: 1px solid #d2d2d2;
+}
+
+header .basket ul li a {
+  display: block;
+  padding: 14px;
+  font-size: 13px;
+  color: #0071e3;
+}
+header .basket ul li a:hover {
+  text-decoration: underline;
+}
