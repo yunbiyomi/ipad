@@ -83,3 +83,21 @@ const infoEls = document.querySelectorAll('.info');
 infoEls.forEach((el) => {
   io.observe(el);
 });
+
+
+// 비디오 재생
+const video = document.querySelector('video');
+const playBtn = document.querySelector('.stage .controller--play');
+const pauseBtn = document.querySelector('.stage .controller--pause');
+
+playBtn.addEventListener('click', () => {
+  video.play();
+  playBtn.classList.add('hide');
+  pauseBtn.classList.remove('hide');
+});
+
+pauseBtn.addEventListener('click', () => {
+  video.pause();
+  playBtn.classList.remove('hide');
+  pauseBtn.classList.add('hide');
+});

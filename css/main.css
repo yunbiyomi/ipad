@@ -670,7 +670,7 @@ nav .menu li.active a {
 }
 
 
-/* Display / Shareplay*/
+/* Display / Shareplay */
 .display .shareplay {
   margin-top: 55px;
 }
@@ -691,8 +691,96 @@ nav .menu li.active a {
 }
 
 
+/* Camera */
+.camera {
+  margin-top: 303px;
+}
 
 
+/* Camera / Stage */
+.camera .stage {
+  position: relative;
+}
+
+.camera .stage h1 {
+  width: 650px;
+  height: 450px;
+  background-image: url("../images/camera_headline.png");
+  transform: translate(-25px, 0);
+}
+
+.camera .stage .info {
+  position: absolute;
+  top: 150px;
+  right: 0;
+}
+
+.camera .stage .figures {
+  height: 770px;
+  margin-top: 24px;
+}
+
+.camera .stage figure {
+  transform: translate(90px, 0);
+}
+
+.camera .stage video {
+  position: absolute;
+  top: 36px;
+  left: 76px;
+  -webkit-mask-image: url("../images/camera_video_mask.png");
+  mask-image: url("../images/camera_video_mask.png");
+}
+
+.camera .stage .controller--play,
+.camera .stage .controller--pause {
+  color: var(--color-link);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform: translate(428px, -134px) rotate(-3deg);
+}
+
+.camera .stage .controller--play:hover,
+.camera .stage .controller--pause:hover {
+  text-decoration: underline;
+}
+
+.camera .stage .controller--play.hide,
+.camera .stage .controller--pause.hide {
+  display: none;
+}
+
+.camera .stage .controller--play img,
+.camera .stage .controller--pause img {
+  width: 20px;
+  margin-top: -2px;
+}
+
+.camera .stage figcaption {
+  width: 130px;
+  height: 110px;
+  background-image: url("../images/camera_hardware_caption.png");
+  transform: translate(-116px, 383px);
+}
+
+
+/* Camera / Edit */
+.camera .edit .figures {
+  height: 910px;
+}
+
+.camera .edit figure {
+  transform: translate(20px, 0);
+}
+
+.camera .edit figcaption {
+  width: 130px;
+  height: 47px;
+  background-image: url("../images/camera_edit_caption.png");
+  transform: translate(27px, 905px);
+}
 
 
 
