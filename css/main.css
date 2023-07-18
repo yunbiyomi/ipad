@@ -45,6 +45,11 @@ p {
   line-height: 1.6;
 }
 
+sup {
+  margin-right: 6px;
+  font-size: .7em;
+  vertical-align: top;
+}
 
 /* Inner */
 .inner {
@@ -549,6 +554,12 @@ nav .menu li.active a {
 
 nav .menu li.active a {
   color: var(--color-font);
+}
+
+
+/* Main */
+main {
+  overflow-x: hidden;
 }
 
 
@@ -1255,8 +1266,192 @@ nav .menu li.active a {
 }
 
 
+/* Footer */
+footer {
+  background-color: var(--color-section);
+}
 
 
+/* Footer / Buy-info */
+footer .buy-info {
+  padding: 76px 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center;
+}
+
+footer .buy-info .icon {
+  word-wrap: 56px;
+  height: 56px;
+  margin: 0 auto 10px;
+}
+
+footer .buy-info h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+footer .buy-info p {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+footer .buy-info a.link {
+  font-size: 14px;
+}
+
+
+/* Footer / Warning */
+footer .warning {
+  padding: 18px 0 10px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+footer .warning ol {
+  list-style: decimal; 
+  padding-left: 16px;
+}
+
+footer .warning li {
+  margin-bottom: 10px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--color-font-darkgray);
+}
+
+
+/* Footer / Breadcrums */
+footer .breadcrums {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+footer .breadcrums a {
+  font-size: 12px;
+  color: var(--color-font-darkgray);
+  position: relative;
+}
+
+footer .breadcrums a.apple-logo {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/path_apple.svg");
+}
+
+footer .breadcrums a:hover {
+  text-decoration: underline;
+}
+
+footer .breadcrums a::after {
+  content: "";
+  width: 8px;
+  height: 18px;
+  background-image: url("../images/path_div.svg");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -18px;
+  margin: auto;
+}
+
+footer .breadcrums a:last-child:after {
+  display: none;
+}
+
+
+/* Footer / Navigations */
+footer .navigations {
+  height: 344px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+footer .navigations .map {
+  margin-top: 24px;
+}
+
+footer .navigations .map:nth-child(6){
+  padding-bottom: 100px;
+}
+
+footer .navigations .map h3 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+footer .navigations .map li {
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+footer .navigations .map li a {
+  color: var(--color-font-darkgray);
+}
+
+footer .navigations .map li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer / How-to-shop */
+footer .how-to-shop {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-font-darkgray);
+}
+
+footer .how-to-shop a {
+  color: var(--color-link);
+}
+
+footer .how-to-shop a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer / Legal */
+footer .legal {
+  margin-top: 10px;
+  padding: 10px 0 40px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  gap: 50px;
+  font-size: 12px;
+  color: var(--color-font-darkgray);
+}
+
+footer .legal ul {
+  flex-grow: 1;
+  display: flex;
+  gap: 21px; 
+}
+
+footer .legal ul li {
+  position: relative;
+}
+
+footer .legal ul li::after {
+  content: "|";
+  position: absolute;
+  right: -11px;
+  color: var(--color-border);
+}
+
+footer .legal ul li:last-child:after {
+  display: none;
+}
+
+footer .legal ul li:hover a{
+  text-decoration: underline;
+}
 
 
 
