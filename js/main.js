@@ -88,7 +88,7 @@ const menuStarterEl = document.querySelector('header .menu-starter');
 menuStarterEl.addEventListener('click', () => {
   if(headerEl.classList.contains('menuing')){
     headerEl.classList.remove('menuing');
-    searchInputEl.value = ''
+    searchInputEl.value = '';
     palyScroll();
   }
   else {
