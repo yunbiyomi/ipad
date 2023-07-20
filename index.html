@@ -38,7 +38,15 @@
   <header>
     <div class="inner">
       <ul class="menu">
-        <li class="apple-logo"><a href="javascript:void(0)">Apple</a></li>
+        <li class="menu-starter">
+          <a>
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+        </li>
+        <li class="apple-logo"><a href="/">Apple</a></li>
         <li><a href="javascript:void(0)">스토어</a></li>
         <li><a href="javascript:void(0)">Mac</a></li>
         <li><a href="javascript:void(0)">ipad</a></li>
@@ -75,10 +83,11 @@
             <div class="search-icon"></div>
             <div class="search-closer"></div>
           </div>
+          <div class="search-canceler">취소</div>
           <div class="autocompletes">
             <h3>빠른 링크</h3>
             <ul>
-              <li><a href="javascript:void(0)">Apple Store 임시 휴무 관련 자주하는 질문</a></li>
+              <li><a href="javascript:void(0)">Apple Store 임시 휴무 관련 자주하는 질문</a>searchInputEl.value = ''</li>
               <li><a href="javascript:void(0)">Apple Store Online에서 쇼핑하기</a></li>
               <li><a href="javascript:void(0)">액세서리</a></li>
               <li><a href="javascript:void(0)">AirPods</a></li>
@@ -87,13 +96,30 @@
           </div>
         </div>
       </div>
+
+      <div class="clone-menu">
+        <ul>
+          <li><a href="javascript:void(0)">스토어</a></li>
+          <li><a href="javascript:void(0)">Mac</a></li>
+          <li><a href="javascript:void(0)">ipad</a></li>
+          <li><a href="javascript:void(0)">iphone</a></li>
+          <li><a href="javascript:void(0)">Watch</a></li>
+          <li><a href="javascript:void(0)">Airpods</a></li>
+          <li><a href="javascript:void(0)">Apple 독점 제공</a></li>
+          <li><a href="javascript:void(0)">액세서리</a></li>
+          <li><a href="javascript:void(0)">고객지원</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
   <!-- Navigation -->
   <nav>
+    <div class="shadow"></div>
+    <div class="contents-bg"></div>
     <div class="inner">
       <h1>iPad</h1>
+      <div class="menu-toggler"></div>
       <ul class="menu">
         <li class="active"><a href="javascript:void(0)">개요</a></li>
         <li><a href="javascript:void(0)">iPad를 선택하는 이유</a></li>
