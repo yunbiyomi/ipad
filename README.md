@@ -3,22 +3,23 @@
 
 **사용 기술**
 
-<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
+<div>
+  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
   <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
+</div>
+
 <br><br>
 
 
 ## 구현화면
 ### 1) 웹사이트 버전
-
-
+![웹버전](https://github.com/yunbiyomi/ipad/assets/83996384/0dee1489-701f-4b10-9018-a8307d2726dd)
 <br><br>
 
-### 2) 테블릿 버전
-![](https://velog.velcdn.com/images/yunbiyomi/post/2662e9a3-ed82-4cf8-9aae-d2227cc63f92/image.gif)
-
+### 2) 테블릿 버전 (max-width:1000px)
+![테블릿버전](https://github.com/yunbiyomi/ipad/assets/83996384/d8388ff9-4dc2-41aa-9a35-28f9659979cb)
 <br><br>
 
-### 3) 모바일 버전
-![](https://velog.velcdn.com/images/yunbiyomi/post/97f919c8-c49b-437e-bff1-f66f40b457b8/image.gif)
+### 3) 모바일 버전 (max-width:740px)
+![모바일버전](https://github.com/yunbiyomi/ipad/assets/83996384/9bf42fb0-1993-41e1-bfb3-e5c1795ea3c1)
